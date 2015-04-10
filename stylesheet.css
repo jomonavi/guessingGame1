@@ -1,0 +1,22 @@
+body {
+	background: url("galaxyImage.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	font-size: 40px;
+	color: white;
+}
+
+
+
+.container, #buttonDiv {
+	width: 400px;
+	margin: 0 auto;
+
+}
+
+form {
+	color: white;
+}

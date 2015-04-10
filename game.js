@@ -6,9 +6,11 @@ function numGenerator() {
 }
 
 function getNumber() {
-    var numberChoice = prompt("Please choose a number between 1 - 100");
-    return numberChoice
+    var numberChoice = document.getElementById("inputBox").value;
+    alert(numberChoice);
+    return numberChoice;
 }
+
 
 
 function heatChecker(target, guess) {
@@ -31,9 +33,11 @@ function heatChecker(target, guess) {
 
 function guessingGame(userNumber) {
     var numberTarget = numGenerator();
+    var hintNum = numberTarget;
     
     for (var chances = 5; chances >= 1; chances -= 1) {
         var playerPick = getNumber();
+        console.log(playerPick);
         
         if ((typeof playerPick != "number") || (playerPick > 100) || (playerPick < 1)) {
             console.log("You input was not valid!");
