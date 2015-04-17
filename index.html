@@ -19,24 +19,31 @@
     <![endif]-->
   </head>
   <body> 
-  <div class="container">
-    <h1>Guess a Number!</h1>
-    <section>
-        Enter a Number Between 1-100
-        <input type="text" id="inputBox" >
-        <button id="enterInput" onclick="guessingGame()">Play</button>
-    </section>
+  <div id="center">
+    <div class="container">
+      <h1>Guess a Number!</h1>
+      <section>
+  <!--         Enter a Number Between 1-100-->        
+          <input type="number" id="inputBox" placeholder="Enter a Number Between 1-100">
+          <button id="submitButton">Submit</button> 
+      </section>
 
-    <div id="buttonDiv">
-      <button id="Play Again!" type="button" class="btn btn-default">Play Again</button>
-      <button id="Hint" type="button" class="btn btn-default">Hint</button>
+      <div id="buttonDiv">
+        <button id="playAgain" type="button" class="btn btn-default">Play Again</button>
+        <button id="hint" type="button" class="btn btn-default">Hint</button>
+      </div>
+      <div>
+        <span id="feedback">
+          <!-- feedback is going to go here -->
+        </span>
+      </div>
     </div>
-  </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="game.js"></script>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="game.js"></script>
+    </div> 
   </body>
 </html>
